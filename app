@@ -60,7 +60,7 @@ def hell():
 
     return upload_image.link
 
-app = Flask(__name__)
+app=Flask(__name__)
 
 
 @app.route('/', methods=['POST'])
