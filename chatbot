@@ -48,6 +48,7 @@ def goodnight():
     return upload_image.link
 
 
+
 def hell():
 
     r = random.randrange(1, 2)
