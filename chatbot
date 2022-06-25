@@ -1,7 +1,6 @@
-from flask import Flask, escape, request, make_response, jsonify
+from flask import Flask, request, make_response, jsonify
 
 import pyimgur
-import matplotlib.pyplot as plt
 import random
 
 ## heruko

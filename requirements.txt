@@ -1,0 +1,4 @@
+Flask
+pyimgur
+random
+gunicorn
