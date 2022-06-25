@@ -4,7 +4,7 @@ import pyimgur
 import matplotlib.pyplot as plt
 import random
 
-
+## heruko
 def morning():
 
     r = random.randrange(1, 7)
@@ -46,7 +46,6 @@ def goodnight():
     upload_image = im.upload_image(path)
 
     return upload_image.link
-
 
 
 def hell():
