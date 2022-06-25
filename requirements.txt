@@ -1,4 +1,3 @@
 Flask
 pyimgur
-random
 gunicorn
