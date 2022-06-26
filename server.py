@@ -78,11 +78,8 @@ def webhook():
         msg += "輸入 早安\n"
         msg += "輸入 午安\n"
         msg += "輸入 晚安\n"
-        msg += "輸入 地玉\n"
-        if (json != None):
-            print(str(json))
-        else:
-            print('123')
+        msg += "輸入 地獄\n"
+        
         res_message = {"fulfillmentMessages": [ { "text": { "text": [msg] } } ] }
 
     elif json['queryResult']['parameters']['any'] == "早安":
@@ -91,7 +88,7 @@ def webhook():
         res_message =   {"fulfillmentMessages" : [ {"image" : { "imageUri" : msg } } ] } 
 
 
-    elif json['queryResult']['parameters']['any'] == "地玉":
+    elif json['queryResult']['parameters']['any'] == "地獄":
     
         msg = hell()
         res_message =   {"fulfillmentMessages" : [ {"image" : { "imageUri" : msg } } ] } 
