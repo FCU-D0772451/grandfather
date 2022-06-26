@@ -67,11 +67,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 
-'''
-def hello():
-    return "this is good"
-'''
-
 def webhook():
     json = request.get_json(silent=True,force=True)
     
@@ -115,7 +110,3 @@ def webhook():
 
 if __name__ == "__main__":
     app.run(port=5000)
-
-
-
-
