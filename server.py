@@ -79,7 +79,7 @@ def webhook():
         msg += "輸入 午安\n"
         msg += "輸入 晚安\n"
         msg += "輸入 地玉\n"
-
+        print(json)
         res_message = {"fulfillmentMessages": [ { "text": { "text": [msg] } } ] }
 
     elif json['queryResult']['parameters']['any'] == "早安":
