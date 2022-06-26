@@ -1,4 +1,4 @@
-from flask import Flask#, request, make_response, jsonify
+from flask import Flask, request, make_response, jsonify
 
 import pyimgur
 import random
