@@ -1,11 +1,10 @@
 from flask import Flask#, request, make_response, jsonify
 
-'''
 import pyimgur
 import random
-'''
 
-'''
+
+
 ## heruko
 def morning():
 
@@ -62,16 +61,17 @@ def hell():
     upload_image = im.upload_image(path)
 
     return upload_image.link
-'''
+
 app = Flask(__name__)
 
 
 @app.route('/', methods=['GET', 'POST'])
-def hello():
-    return "this is good"
-    
 
 '''
+def hello():
+    return "this is good"
+'''
+
 def webhook():
     json = request.get_json(silent=True,force=True)
     
@@ -112,7 +112,6 @@ def webhook():
 
     return make_response(jsonify(res_message))
 
-'''
 
 if __name__ == "__main__":
     app.run(port=5000)
