@@ -1,19 +1,9 @@
-from flask import Flask, request, make_response, jsonify
+from flask import Flask#, request, make_response, jsonify
+
 '''
 import pyimgur
 import random
 '''
-from flask import Flask
-app = Flask(__name__)
-
-
-@app.route("/")
-def go():
-    return result(), 200
-
-
-if __name__ == '__main__':
-    app.run(port=5000)
 
 '''
 ## heruko
@@ -72,15 +62,16 @@ def hell():
     upload_image = im.upload_image(path)
 
     return upload_image.link
-
+'''
 app = Flask(__name__)
 
 
 @app.route('/', methods=['POST'])
 def hello():
-    return "this is"
+    return "this is good"
     
 
+'''
 def webhook():
     json = request.get_json(silent=True,force=True)
     
@@ -122,11 +113,10 @@ def webhook():
     return make_response(jsonify(res_message))
 
 '''
-'''
+
 if __name__ == "__main__":
     app.run(port=5000)
 
-'''
 
 
 
