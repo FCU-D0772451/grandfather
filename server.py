@@ -69,7 +69,6 @@ app = Flask(__name__)
 
 def webhook():
     json = request.get_json(silent=True,force=True)
-    
 
     res_message = {"fulfillmentText": None}
     
