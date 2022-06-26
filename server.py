@@ -55,7 +55,7 @@ def hell():
 
     client_id ='0d519e46f026f35'
     print(r)
-    path = '地玉/' + '地玉 ' + '(' + str(r) + ')' + '.jpg'
+    path = '地獄/' + '地玉 ' + '(' + str(r) + ')' + '.jpg'
 
     im = pyimgur.Imgur(client_id)
     upload_image = im.upload_image(path)
