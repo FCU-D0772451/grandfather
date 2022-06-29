@@ -51,11 +51,11 @@ def goodnight():
 
 def hell():
 
-    r = random.randrange(1, 2)
+    r = random.randrange(1, 8)
 
     client_id ='0d519e46f026f35'
     print(r)
-    path = '地獄/' + '地玉 ' + '(' + str(r) + ')' + '.jpg'
+    path = '地獄/' + '地獄 ' + '(' + str(r) + ')' + '.jpg'
 
     im = pyimgur.Imgur(client_id)
     upload_image = im.upload_image(path)
