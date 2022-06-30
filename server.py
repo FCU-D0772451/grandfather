@@ -11,7 +11,7 @@ def morning():
     r = random.randrange(1, 7)
 
 
-    client_id = '0d519e46f026f35'
+    client_id = 'ac66a0f7414e9ef'
     print(r)
     path = '早安/' + '長輩圖 ' + '(' + str(r) + ')' + '.jpg'
 
@@ -26,7 +26,7 @@ def afternoon():
 
     r = random.randrange(1, 8)
 
-    client_id = '0d519e46f026f35'
+    client_id = '51503dac7c6d0b9'
     print(r)
     path = '午安/' + '長輩圖 ' + '(' + str(r) + ')' + '.jpg'
 
@@ -39,7 +39,7 @@ def goodnight():
 
     r = random.randrange(1, 7)
 
-    client_id = '0d519e46f026f35'
+    client_id = '07f717179f3bd69'
     print(r)
     path = '晚安/' + '長輩圖 ' + '(' + str(r) + ')' + '.jpg'
 
@@ -53,14 +53,14 @@ def hell():
 
     r = random.randrange(1, 8)
 
-    client_id ='0d519e46f026f35'
+    client_id ='aa4cdef37c76c22'
     print(r)
     path = '地獄/' + '地獄 ' + '(' + str(r) + ')' + '.jpg'
-
     im = pyimgur.Imgur(client_id)
     upload_image = im.upload_image(path)
 
     return upload_image.link
+
 
 app = Flask(__name__)
 
