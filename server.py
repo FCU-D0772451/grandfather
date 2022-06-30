@@ -124,7 +124,7 @@ def webhook():
     elif json['queryResult']['parameters']['any'] == "晚安":
     
         msg = goodnight()
-        res_message =   {"fulfillmentMessages" : [ {"image" : { "imageUri" : 'https://i.imgur.com/mETu5si.jpg' } } ] } 
+        res_message =   {"fulfillmentMessages" : [ {"image" : { "imageUri" : msg } } ] } 
 
     return make_response(jsonify(res_message))
 
